@@ -23,6 +23,10 @@ Content-Type: application/json;charset: utf-8
 GET http://localhost:3000/projects
 
 ###
+
+GET http://www.baidu.com
+
+###
 DELETE http://localhost:3000/projects/H10cxnvMZ
 
 ###
