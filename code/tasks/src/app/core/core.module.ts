@@ -1,6 +1,6 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MdToolbarModule, MdIconModule, MdButtonModule } from '@angular/material';
+import { SharedModule } from "../shared/shared.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,17 +13,15 @@ import { HttpModule } from "@angular/http";
 
 @NgModule({
   imports: [
-    CommonModule,
-    MdToolbarModule,
-    MdIconModule,
-    MdButtonModule,
-    HttpModule
+    HttpModule,
+    SharedModule,
+    BrowserAnimationsModule
   ],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
   ]
 })
 export class CoreModule {
