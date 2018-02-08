@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InviteComponent implements OnInit {
 
+  items = [
+    {
+      id: 1,
+      name: 'wangfei',
+    },
+    {
+      id: 2,
+      name: 'wanger',
+    },
+    {
+      id: 3,
+      name: 'zhouer',
+    }
+
+  ];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  displayUser(user: {id: string; name: string}) {
+    return user ? user.name : '';
   }
 
 }
