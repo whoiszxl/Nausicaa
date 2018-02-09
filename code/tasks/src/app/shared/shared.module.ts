@@ -17,6 +17,8 @@ import {
   MdAutocompleteModule,
   MdDialogModule,
   MdMenuModule,
+  MdCheckboxModule,
+  MdTooltipModule,
 } from '@angular/material';
 
 @NgModule({
@@ -33,6 +35,8 @@ import {
     MdDialogModule,
     MdAutocompleteModule,
     MdMenuModule,
+    MdCheckboxModule,
+    MdTooltipModule,
   ],
   exports: [
     CommonModule,
@@ -47,6 +51,8 @@ import {
     MdDialogModule,
     MdAutocompleteModule,
     MdMenuModule,
+    MdCheckboxModule,
+    MdTooltipModule,
   ],
   declarations: []
 })
