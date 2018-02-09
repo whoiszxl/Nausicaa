@@ -8,6 +8,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { LoginModule } from 'app/login/login.module';
 import { ProjectRoutingModule } from 'app/project/project-routing.module';
 import { ProjectModule } from 'app/project/project.module';
+import { TaskModule } from 'app/task/task.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectModule } from 'app/project/project.module';
     AppRoutingModule,
     LoginModule,
     ProjectRoutingModule,
-    ProjectModule
+    ProjectModule,
+    TaskModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
