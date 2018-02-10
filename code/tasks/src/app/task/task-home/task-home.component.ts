@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
 import { NewTaskComponent } from 'app/task/new-task/new-task.component';
+import { CopyTaskComponent } from 'app/task/copy-task/copy-task.component';
 
 @Component({
   selector: 'app-task-home',
@@ -83,4 +84,7 @@ export class TaskHomeComponent implements OnInit {
     this.dialog.open(NewTaskComponent);
   }
 
+  launchCopyTaskDialog() {
+    const dialogRef = this.dialog.open(CopyTaskComponent, {data: {lists: this.lists}});
+  }
 }
