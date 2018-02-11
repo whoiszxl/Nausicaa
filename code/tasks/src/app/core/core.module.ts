@@ -10,6 +10,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 import { loadSvgResources } from '../utils/svg.util';
 import { HttpModule } from "@angular/http";
 
+import 'hammerjs';
 
 @NgModule({
   imports: [
