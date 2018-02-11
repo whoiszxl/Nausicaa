@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MdSidenavModule } from '@angular/material';
-
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
@@ -23,6 +23,7 @@ import { TaskModule } from 'app/task/task.module';
     ProjectRoutingModule,
     ProjectModule,
     TaskModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
